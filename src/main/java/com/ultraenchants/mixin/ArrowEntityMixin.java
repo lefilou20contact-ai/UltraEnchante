@@ -14,7 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.EntityHitResult;
-import net.minecraft.world.explosion.Explosion;
+import net.minecraft.world.explosion.ExplosionBehavior;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -49,7 +49,7 @@ public abstract class ArrowEntityMixin {
             float radius = 1.5f + 0.5f * explosiveLvl;
             arrow.getWorld().createExplosion(
                     arrow, target.getX(), target.getY(), target.getZ(),
-                    radius, false, Explosion.DestructionType.KEEP
+                    radius, false, net.minecraft.world.explosion.ExplosionSourceType.MOB
             );
         }
 
