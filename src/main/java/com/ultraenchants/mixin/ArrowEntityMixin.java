@@ -49,7 +49,7 @@ public abstract class ArrowEntityMixin {
             float radius = 1.5f + 0.5f * explosiveLvl;
             arrow.getWorld().createExplosion(
                     arrow, target.getX(), target.getY(), target.getZ(),
-                    radius, false, Explosion.DestructionType.NONE
+                    radius, false, Explosion.DestructionType.KEEP
             );
         }
 

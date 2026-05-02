@@ -109,15 +109,15 @@ public abstract class ItemStackMixin {
             for (var drop : drops) {
                 ItemStack dropStack = drop.getStack();
                 // Cherche la recette de fonte
-                Optional<net.minecraft.recipe.SmeltingRecipe> recipe = sw.getRecipeManager()
+                sw.getRecipeManager()
                         .getFirstMatch(RecipeType.SMELTING,
                                 new net.minecraft.inventory.SimpleInventory(dropStack),
-                                world);
-                recipe.ifPresent(r -> {
-                    ItemStack result = r.getOutput(world.getRegistryManager()).copy();
-                    result.setCount(dropStack.getCount());
-                    drop.setStack(result);
-                });
+                                world)
+                        .ifPresent(entry -> {
+                            ItemStack result = entry.value().getResult(world.getRegistryManager()).copy();
+                            result.setCount(dropStack.getCount());
+                            drop.setStack(result);
+                        });
             }
         }
 
