@@ -12,7 +12,7 @@ import net.minecraft.entity.EquipmentSlot;
  * Renvoie 10% * niveau des dégâts reçus à l'attaquant.
  * Version bien plus puissante que le Thorns vanilla.
  */
-class ThornsPlusEnchantment extends BaseEnchantment {
+public class ThornsPlusEnchantment extends BaseEnchantment {
     public ThornsPlusEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.ARMOR_CHEST, 5,
                 EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET, EquipmentSlot.HEAD);
@@ -29,7 +29,7 @@ class ThornsPlusEnchantment extends BaseEnchantment {
  * Réduit tous les dégâts de 5% * niveau (pas limité à un type de dégât).
  * Géré via LivingEntityMixin.
  */
-class GuardianEnchantment extends BaseEnchantment {
+public class GuardianEnchantment extends BaseEnchantment {
     public GuardianEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.ARMOR, 3,
                 EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET, EquipmentSlot.HEAD);
@@ -41,7 +41,7 @@ class GuardianEnchantment extends BaseEnchantment {
  * Ralentit chute, permet de planer brièvement en maintenant espace.
  * Niv 1 = chute lente | Niv 3 = quasi lévitation
  */
-class AngelEnchantment extends BaseEnchantment {
+public class AngelEnchantment extends BaseEnchantment {
     public AngelEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_FEET, 3, EquipmentSlot.CHEST);
     }
@@ -54,7 +54,7 @@ class AngelEnchantment extends BaseEnchantment {
  * Rayon : 4 + 2 * niveau blocs
  * Géré via PlayerEntityMixin (tick).
  */
-class MagnetEnchantment extends BaseEnchantment {
+public class MagnetEnchantment extends BaseEnchantment {
     public MagnetEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.ARMOR_CHEST, 3, EquipmentSlot.CHEST);
     }
@@ -65,7 +65,7 @@ class MagnetEnchantment extends BaseEnchantment {
  * Donne Speed I/II/III permanent tant que l'armure est portée.
  * Géré via PlayerEntityMixin (tick).
  */
-class SpeedBoostEnchantment extends BaseEnchantment {
+public class SpeedBoostEnchantment extends BaseEnchantment {
     public SpeedBoostEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.ARMOR_FEET, 3, EquipmentSlot.FEET);
     }
@@ -76,7 +76,7 @@ class SpeedBoostEnchantment extends BaseEnchantment {
  * Augmente la résistance physique selon le niveau.
  * Niv 1 = Résistance I | Niv 4 = Résistance IV
  */
-class IronhideEnchantment extends BaseEnchantment {
+public class IronhideEnchantment extends BaseEnchantment {
     public IronhideEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.ARMOR_CHEST, 4, EquipmentSlot.CHEST);
     }
@@ -87,7 +87,7 @@ class IronhideEnchantment extends BaseEnchantment {
  * Chance de renvoyer une flèche à l'attaquant.
  * Niv 1=15% | Niv 2=30% | Niv 3=50%
  */
-class ReflectEnchantment extends BaseEnchantment {
+public class ReflectEnchantment extends BaseEnchantment {
     public ReflectEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.ARMOR_CHEST, 3, EquipmentSlot.CHEST);
     }
@@ -97,7 +97,7 @@ class ReflectEnchantment extends BaseEnchantment {
  * WITHER_PROOF (Niv. 1)
  * Immunité complète contre l'effet Wither.
  */
-class WitherProofEnchantment extends BaseEnchantment {
+public class WitherProofEnchantment extends BaseEnchantment {
     public WitherProofEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_CHEST, 1, EquipmentSlot.CHEST);
     }
@@ -110,7 +110,7 @@ class WitherProofEnchantment extends BaseEnchantment {
  * Peut sauver la vie plusieurs fois par jour (cooldown : 20min / niveau).
  * Niv 1 = soigne à 2HP | Niv 3 = soigne à 10HP + effets positifs
  */
-class UndyingPlusEnchantment extends BaseEnchantment {
+public class UndyingPlusEnchantment extends BaseEnchantment {
     public UndyingPlusEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_CHEST, 3, EquipmentSlot.CHEST);
     }

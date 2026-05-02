@@ -12,7 +12,7 @@ import net.minecraft.entity.EquipmentSlot;
  * Les flèches ignorent les variations de trajectoire et font plus de dégâts
  * selon la distance parcourue. +5% dégâts par bloc parcouru par niveau.
  */
-class SniperEnchantment extends BaseEnchantment {
+public class SniperEnchantment extends BaseEnchantment {
     public SniperEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.BOW, 3, EquipmentSlot.MAINHAND);
     }
@@ -23,7 +23,7 @@ class SniperEnchantment extends BaseEnchantment {
  * Les flèches explosent à l'impact.
  * Rayon : 1.5 + 0.5 * niveau blocs.
  */
-class ExplosiveArrowEnchantment extends BaseEnchantment {
+public class ExplosiveArrowEnchantment extends BaseEnchantment {
     public ExplosiveArrowEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.BOW, 3, EquipmentSlot.MAINHAND);
     }
@@ -34,7 +34,7 @@ class ExplosiveArrowEnchantment extends BaseEnchantment {
  * CHAIN_LIGHTNING (Niv. 1-3)
  * La flèche génère de la foudre en chaîne sur jusqu'à 3 * niveau cibles proches.
  */
-class ChainLightningEnchantment extends BaseEnchantment {
+public class ChainLightningEnchantment extends BaseEnchantment {
     public ChainLightningEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.BOW, 3, EquipmentSlot.MAINHAND);
     }
@@ -45,7 +45,7 @@ class ChainLightningEnchantment extends BaseEnchantment {
  * Les flèches suivent légèrement la trajectoire vers les mobs proches.
  * Géré via ArrowEntityMixin.
  */
-class HomingEnchantment extends BaseEnchantment {
+public class HomingEnchantment extends BaseEnchantment {
     public HomingEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.BOW, 2, EquipmentSlot.MAINHAND);
     }
@@ -56,7 +56,7 @@ class HomingEnchantment extends BaseEnchantment {
  * WITHER_ARROW (Niv. 1-2)
  * Les flèches appliquent l'effet Wither II pendant 5s * niveau.
  */
-class WitherArrowEnchantment extends BaseEnchantment {
+public class WitherArrowEnchantment extends BaseEnchantment {
     public WitherArrowEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.BOW, 2, EquipmentSlot.MAINHAND);
     }
@@ -67,7 +67,7 @@ class WitherArrowEnchantment extends BaseEnchantment {
  * Les flèches gèlent la cible (slowness + mining fatigue).
  * Durée : 3s * niveau
  */
-class IceshotEnchantment extends BaseEnchantment {
+public class IceshotEnchantment extends BaseEnchantment {
     public IceshotEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.BOW, 3, EquipmentSlot.MAINHAND);
     }
@@ -78,7 +78,7 @@ class IceshotEnchantment extends BaseEnchantment {
  * Tire N flèches supplémentaires en éventail (N = niveau).
  * Incompatible avec le Multishot vanilla.
  */
-class MultishotPlusEnchantment extends BaseEnchantment {
+public class MultishotPlusEnchantment extends BaseEnchantment {
     public MultishotPlusEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.CROSSBOW, 3, EquipmentSlot.MAINHAND);
     }
@@ -94,7 +94,7 @@ class MultishotPlusEnchantment extends BaseEnchantment {
  * Les flèches rebondissent sur les murs et touchent plusieurs cibles.
  * Nombre de rebonds : niveau
  */
-class BounceEnchantment extends BaseEnchantment {
+public class BounceEnchantment extends BaseEnchantment {
     public BounceEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.BOW, 3, EquipmentSlot.MAINHAND);
     }

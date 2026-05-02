@@ -13,7 +13,7 @@ import net.minecraft.entity.EquipmentSlot;
  * Niv 1 = Jump Boost I | Niv 4 = Jump Boost IV
  * Aussi réduit les dégâts de chute de 25% par niveau.
  */
-class SpringEnchantment extends BaseEnchantment {
+public class SpringEnchantment extends BaseEnchantment {
     public SpringEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.ARMOR_FEET, 4, EquipmentSlot.FEET);
     }
@@ -25,7 +25,7 @@ class SpringEnchantment extends BaseEnchantment {
  * Niv 1 = obsidienne temporaire | Niv 2 = croûte solide durable
  * Incompatible avec Frost Walker.
  */
-class LavaWalkerEnchantment extends BaseEnchantment {
+public class LavaWalkerEnchantment extends BaseEnchantment {
     public LavaWalkerEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_FEET, 2, EquipmentSlot.FEET);
     }
@@ -43,7 +43,7 @@ class LavaWalkerEnchantment extends BaseEnchantment {
  * Cooldown : 5s / niveau
  * Géré via PlayerEntityMixin (key input).
  */
-class DashEnchantment extends BaseEnchantment {
+public class DashEnchantment extends BaseEnchantment {
     public DashEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.ARMOR_FEET, 3, EquipmentSlot.FEET);
     }
@@ -54,13 +54,13 @@ class DashEnchantment extends BaseEnchantment {
  * Annule complètement les dégâts de chute.
  * Niv 2 = aussi immunité aux dégâts d'ender pearl.
  */
-class AntiGravityEnchantment extends BaseEnchantment {
+public class AntiGravityEnchantment extends BaseEnchantment {
     public AntiGravityEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.ARMOR_FEET, 2, EquipmentSlot.FEET);
     }
     @Override
     protected boolean canAccept(net.minecraft.enchantment.Enchantment other) {
-        if (other instanceof net.minecraft.enchantment.FeatherFallingEnchantment) return false;
+        if (other instanceof net.minecraft.enchantment.ProtectionEnchantment) return false;
         return super.canAccept(other);
     }
 }
@@ -74,7 +74,7 @@ class AntiGravityEnchantment extends BaseEnchantment {
  * MALÉDICTION : L'item se dégrade 3x plus vite.
  * Peut s'obtenir en tableaux d'enchantement comme toute malédiction.
  */
-class CurseDecayEnchantment extends BaseEnchantment {
+public class CurseDecayEnchantment extends BaseEnchantment {
     public CurseDecayEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.BREAKABLE, 1,
                 EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND,
@@ -90,7 +90,7 @@ class CurseDecayEnchantment extends BaseEnchantment {
  * L'item reste dans l'inventaire à la mort (ne drop pas).
  * Extrêmement rare, uniquement via commerce ou loot spécial.
  */
-class SoulboundEnchantment extends BaseEnchantment {
+public class SoulboundEnchantment extends BaseEnchantment {
     public SoulboundEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.BREAKABLE, 1,
                 EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND,

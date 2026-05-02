@@ -13,7 +13,7 @@ import net.minecraft.entity.EquipmentSlot;
  * Vole un % de vie par coup. Géré via LivingEntityMixin.
  * Niv 1 = 5% | Niv 5 = 25%
  */
-class LifestealEnchantment extends BaseEnchantment {
+public class LifestealEnchantment extends BaseEnchantment {
     public LifestealEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.WEAPON, 5, EquipmentSlot.MAINHAND);
     }
@@ -25,7 +25,7 @@ class LifestealEnchantment extends BaseEnchantment {
  * Chance de faire tomber la foudre sur la cible.
  * Niv 1=10% | Niv 2=20% | Niv 3=30%
  */
-class ThunderstrikeEnchantment extends BaseEnchantment {
+public class ThunderstrikeEnchantment extends BaseEnchantment {
     public ThunderstrikeEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.WEAPON, 3, EquipmentSlot.MAINHAND);
     }
@@ -36,7 +36,7 @@ class ThunderstrikeEnchantment extends BaseEnchantment {
  * Inflige des dégâts supplémentaires aux mobs non-morts et aux joueurs.
  * Dégâts : 1.5 * niveau
  */
-class SoulrendEnchantment extends BaseEnchantment {
+public class SoulrendEnchantment extends BaseEnchantment {
     public SoulrendEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, 4, EquipmentSlot.MAINHAND);
     }
@@ -54,7 +54,7 @@ class SoulrendEnchantment extends BaseEnchantment {
  * À 50% de vie : +20% dégâts par niveau
  * Géré via LivingEntityMixin.
  */
-class BerserkerEnchantment extends BaseEnchantment {
+public class BerserkerEnchantment extends BaseEnchantment {
     public BerserkerEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.WEAPON, 3, EquipmentSlot.MAINHAND);
     }
@@ -65,7 +65,7 @@ class BerserkerEnchantment extends BaseEnchantment {
  * Applique du poison amplified à chaque coup.
  * Durée : 5s * niveau, Amplificateur : niveau
  */
-class VenomBladeEnchantment extends BaseEnchantment {
+public class VenomBladeEnchantment extends BaseEnchantment {
     public VenomBladeEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, 3, EquipmentSlot.MAINHAND);
     }
@@ -76,7 +76,7 @@ class VenomBladeEnchantment extends BaseEnchantment {
  * Si la cible a moins de 25% de vie : dégâts * (1 + 0.5 * niveau).
  * Puissant contre les boss !
  */
-class ExecuteEnchantment extends BaseEnchantment {
+public class ExecuteEnchantment extends BaseEnchantment {
     public ExecuteEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, 4, EquipmentSlot.MAINHAND);
     }
@@ -88,7 +88,7 @@ class ExecuteEnchantment extends BaseEnchantment {
  * Soigne le porteur de regeneration pendant le combat.
  * Niv 1 = Regen I 3s | Niv 3 = Regen III 5s
  */
-class VampirismEnchantment extends BaseEnchantment {
+public class VampirismEnchantment extends BaseEnchantment {
     public VampirismEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.WEAPON, 3, EquipmentSlot.MAINHAND);
     }
@@ -103,7 +103,7 @@ class VampirismEnchantment extends BaseEnchantment {
  * BLEED (Niv. 1-3)
  * Applique un effet de saignement : ralentissement + particules de dégâts.
  */
-class BleedEnchantment extends BaseEnchantment {
+public class BleedEnchantment extends BaseEnchantment {
     public BleedEnchantment() {
         super(Rarity.COMMON, EnchantmentTarget.WEAPON, 3, EquipmentSlot.MAINHAND);
     }
@@ -113,7 +113,7 @@ class BleedEnchantment extends BaseEnchantment {
  * GRAVITON (Niv. 1-3)
  * Repousse violemment l'ennemi dans les airs à chaque coup.
  */
-class GravitonEnchantment extends BaseEnchantment {
+public class GravitonEnchantment extends BaseEnchantment {
     public GravitonEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, 3, EquipmentSlot.MAINHAND);
     }
@@ -124,7 +124,7 @@ class GravitonEnchantment extends BaseEnchantment {
  * Embrase l'ennemi plus longtemps que Fire Aspect.
  * Durée : 4s * niveau
  */
-class InfernoEnchantment extends BaseEnchantment {
+public class InfernoEnchantment extends BaseEnchantment {
     public InfernoEnchantment() {
         super(Rarity.UNCOMMON, EnchantmentTarget.WEAPON, 4, EquipmentSlot.MAINHAND);
     }

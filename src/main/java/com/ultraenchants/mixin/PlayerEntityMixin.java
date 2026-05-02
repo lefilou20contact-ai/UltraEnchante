@@ -134,7 +134,7 @@ public abstract class PlayerEntityMixin {
                 // L'item reste — on remet en place après le drop via gamerule keepInventory pour cet item
                 // Implementation complète nécessite un Mixin sur PlayerInventory.dropAll()
                 // Ici on log pour montrer la logique
-                player.getWorld().LOGGER.info("[UltraEnchants] Soulbound: {} conservé", stack.getName().getString());
+                org.slf4j.LoggerFactory.getLogger("UltraEnchants").info("[UltraEnchants] Soulbound: {} conservé", stack.getName().getString());
             }
         }
     }

@@ -160,8 +160,6 @@ public class ModEnchantments {
             if (!(entity instanceof LivingEntity target)) return ActionResult.PASS;
 
             // LIFESTEAL : vol de vie
-            int lifestealLvl = weapon.getEnchantments().getInt(
-                    new net.minecraft.nbt.NbtString() {{ /* placeholder */ }});
             // NOTE : voir LifestealEnchantment pour l'implémentation via Mixin
 
             // THUNDERSTRIKE : frappe de foudre (niveau 1-3, chance croissante)
@@ -188,8 +186,8 @@ public class ModEnchantments {
 
             // BLEED : applique slowness + saignement (particules + dégâts sur temps)
             int bleedLvl = getEnchantLevel(weapon, BLEED);
-            if (bleedLvl > 0 && target instanceof LivingEntity le) {
-                le.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60 * bleedLvl, bleedLvl - 1));
+            if (bleedLvl > 0) {
+                target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60 * bleedLvl, bleedLvl - 1));
                 if (world instanceof ServerWorld sw2) {
                     for (int i = 0; i < 8; i++) {
                         sw2.spawnParticles(ParticleTypes.DAMAGE_INDICATOR,
@@ -207,8 +205,8 @@ public class ModEnchantments {
 
             // VENOM_BLADE : poison puissant
             int venomLvl = getEnchantLevel(weapon, VENOM_BLADE);
-            if (venomLvl > 0 && target instanceof LivingEntity le) {
-                le.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100 * venomLvl, venomLvl));
+            if (venomLvl > 0) {
+                target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100 * venomLvl, venomLvl));
             }
 
             // EXECUTE : bonus dégâts si cible < 25% vie
@@ -245,11 +243,7 @@ public class ModEnchantments {
 
     // Utilitaire pour récupérer le niveau d'enchantement sur un ItemStack
     public static int getEnchantLevel(ItemStack stack, Enchantment enchantment) {
-        return stack.getEnchantments().getKeys().stream()
-                .filter(key -> Registries.ENCHANTMENT.get(key) == enchantment)
-                .mapToInt(key -> stack.getEnchantments().getInt(key))
-                .findFirst()
-                .orElse(0);
+        return net.minecraft.enchantment.EnchantmentHelper.getLevel(enchantment, stack);
     }
 
     // Version via ItemStack directement
