@@ -2,6 +2,13 @@
 
 > **42 enchantements custom** pour transformer ton Minecraft en RPG !
 
+
+[![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)](https://fabricmc.net/)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1%20→%201.21.1-green)](https://minecraft.net)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/lefilou20contact-ai/Blockname_/blob/main/LICENSE)
+[![Youtube](https://img.shields.io/badge/LeFilou2.0-Youtube-red)](https://www.youtube.com/@lefilou2.0?sub_confirmation=1)
+[![site](https://img.shields.io/badge/mods%20(by%20me)-web-pink)](https://lefilou20contact-ai.github.io/Blockname_/)
+[![soutenir](https://img.shields.io/badge/Support-Paypal-orange)](https://www.paypal.com/paypalme/lefilou20yt?country.x=FR&locale.x=fr_FR)
 ---
 
 ## 📦 Installation rapide
