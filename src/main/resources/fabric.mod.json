@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "ultraenchants",
+  "version": "${version}",
+  "name": "UltraEnchants",
+  "description": "Adds 40+ powerful custom enchantments to Minecraft!",
+  "authors": ["UltraEnchants Team"],
+  "contact": {
+    "sources": "https://github.com/ultraenchants/ultraenchants"
+  },
+  "license": "MIT",
+  "icon": "assets/ultraenchants/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ultraenchants.UltraEnchantsMain"],
+    "fabric-datagen": ["com.ultraenchants.UltraEnchantsDatagen"]
+  },
+  "mixins": ["ultraenchants.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.4"
+  }
+}

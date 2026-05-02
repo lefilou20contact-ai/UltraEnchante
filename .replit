@@ -1,0 +1,16 @@
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Work"
+mode = "parallel"
+author = 50225058
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd ultraenchants ./gradlew build"

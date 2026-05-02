@@ -1,0 +1,47 @@
+{
+  "enchantment.ultraenchants.lifesteal": "Lifesteal",
+  "enchantment.ultraenchants.thunderstrike": "Thunderstrike",
+  "enchantment.ultraenchants.soulrend": "Soul Rend",
+  "enchantment.ultraenchants.berserker": "Berserker",
+  "enchantment.ultraenchants.venom_blade": "Venom Blade",
+  "enchantment.ultraenchants.execute": "Execute",
+  "enchantment.ultraenchants.vampirism": "Vampirism",
+  "enchantment.ultraenchants.bleed": "Bleed",
+  "enchantment.ultraenchants.graviton": "Graviton",
+  "enchantment.ultraenchants.inferno": "Inferno",
+
+  "enchantment.ultraenchants.sniper": "Sniper",
+  "enchantment.ultraenchants.explosive_arrow": "Explosive Arrow",
+  "enchantment.ultraenchants.chain_lightning": "Chain Lightning",
+  "enchantment.ultraenchants.homing": "Homing",
+  "enchantment.ultraenchants.wither_arrow": "Wither Arrow",
+  "enchantment.ultraenchants.iceshot": "Iceshot",
+  "enchantment.ultraenchants.multishot_plus": "Multishot+",
+  "enchantment.ultraenchants.bounce": "Bounce",
+
+  "enchantment.ultraenchants.thorns_plus": "Thorns+",
+  "enchantment.ultraenchants.guardian": "Guardian",
+  "enchantment.ultraenchants.angel": "Angel Wings",
+  "enchantment.ultraenchants.magnet": "Magnet",
+  "enchantment.ultraenchants.speed_boost": "Speed Boost",
+  "enchantment.ultraenchants.ironhide": "Ironhide",
+  "enchantment.ultraenchants.reflect": "Reflect",
+  "enchantment.ultraenchants.wither_proof": "Wither Proof",
+  "enchantment.ultraenchants.undying_plus": "Undying+",
+
+  "enchantment.ultraenchants.veinminer": "Vein Miner",
+  "enchantment.ultraenchants.smelting": "Auto-Smelting",
+  "enchantment.ultraenchants.magnetic_pick": "Magnetic Pick",
+  "enchantment.ultraenchants.explosive_mine": "Explosive Mine",
+  "enchantment.ultraenchants.lumber": "Lumberjack",
+  "enchantment.ultraenchants.replant": "Replant",
+  "enchantment.ultraenchants.titan_pick": "Titan Pick",
+
+  "enchantment.ultraenchants.spring": "Spring",
+  "enchantment.ultraenchants.lava_walker": "Lava Walker",
+  "enchantment.ultraenchants.dash": "Dash",
+  "enchantment.ultraenchants.anti_gravity": "Anti-Gravity",
+
+  "enchantment.ultraenchants.curse_decay": "Curse of Decay",
+  "enchantment.ultraenchants.soulbound": "Soulbound"
+}
