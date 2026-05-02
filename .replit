@@ -5,6 +5,7 @@ channel = "stable-25_05"
 expertMode = true
 
 [workflows]
+runButton = "Project"
 
 [[workflows.workflow]]
 name = "Work"
@@ -14,3 +15,23 @@ author = 50225058
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd ultraenchants ./gradlew build"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build"
+
+[[workflows.workflow]]
+name = "Build"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./gradlew build --no-daemon"
+
+[workflows.workflow.metadata]
+outputType = "console"
